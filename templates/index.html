@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Gemini Chatbot</title>
+  <title>Chatbot AI</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
   <style>
@@ -13,7 +13,7 @@
   </style>
 </head>
 <body>
-  <h2>Gemini Chatbot with Speech</h2>
+  <h2>Chatbot AI</h2>
   <div id="chatbox"></div>
   <input type="text" id="msg" placeholder="Ask me anything..." />
   <button onclick="sendMessage()">Send</button>
@@ -34,7 +34,7 @@
         body: JSON.stringify({ message: userText })
       });
       const data = await res.json();
-      chatBox.innerHTML += `<p class="bot"><strong>Gemini:</strong> ${data.reply}</p>`;
+      chatBox.innerHTML += `<p class="bot"><strong>chatbotAI:</strong> ${data.reply}</p>`;
       chatBox.scrollTop = chatBox.scrollHeight;
     }
   </script>
