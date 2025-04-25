@@ -14,12 +14,11 @@
 import google.generativeai as genai
 
 # Configure API
-genai.configure(api_key='YOUR_API_KEY')
+genai.configure(api_key=os.getenv('GEMINI_API_KEY'))
 
 # Load the Gemini model
 model = genai.GenerativeModel('gemini-2.0-flash')  # or gemini-1.5-pro, gemini-pro-vision
 
-# ⚠️ This is the persistent chat session — keep it alive
 chat = model.start_chat()
 
 def get_gemini_reply(prompt):
