@@ -1,3 +1,4 @@
 flask
 google-generativeai
 pyttsx3
+gunicorn
