@@ -7,11 +7,13 @@ The chatbot-ai software is powered by the google-Gemini large language model. We
 ## Installation Dependencies
 
 1. Google API key:
-   The user is required to have his own API key. head over to Google AI studio and get you own API key. Replace it with YOUR_API_KEY in the code.
+   The user is required to have his own API key. head over to Google AI studio and get you own API key. add it to the environment variables using the name GEMINI_API_KEY.
 2. Install requirements.txt:
    Run the following command.
    pip install -r requirements.txt
 
 3. Run the flask application.
+
+   A deployed version of this project is also available on Render
 
 ## License: MIT License. 
